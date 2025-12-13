@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVansh EDU-TECH | AI Mastery Workshop - Transform Your Future</title>
+    <meta name="description" content="Master 20 AI Tools in 3 Hours. Learn ChatGPT, AI Video, Image Generation & More. Online & Offline Available.">
+    <link rel="stylesheet" href="style/ai-tech.css">
+    <!-- CSS Debug: Force reload with version -->
+    <link rel="stylesheet" href="style/ai-tech.css?v=2">
+</head>
+<body>
+    <!-- Hexagon Pattern Background -->
+    <div class="hex-pattern"></div>
+
+    <!-- Particle Effect Container -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content-modern fade-in">
+            <!-- Hero Header -->
+            <div class="hero-header">
+                <div class="hero-badge">
+                    <span class="badge-icon">⚡</span>
+                    <span class="badge-text">AI MASTERY WORKSHOP 2025</span>
+                    <span class="badge-icon">⚡</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line-1">Master 20 AI Tools</span>
+                    <span class="title-line-2">Transform Your Future</span>
+                </h1>
+                <p class="hero-description">
+                    Learn ChatGPT, AI Video Creation, Image Generation & More in ONE Intensive 3-Hour Session
+                </p>
+            </div>
+
+            <!-- Hero Stats/Features -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">AI Tools</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">3 Hrs</div>
+                    <div class="stat-label">Live Session</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Hands-On</div>
+                </div>
+            </div>
+
+            <!-- Price Card - Redesigned -->
+            <div class="hero-price-card">
+                <!-- Countdown Timer at Top -->
+                <div class="offer-timer-top">
+                    <span class="timer-icon">⏰</span>
+                    <span class="timer-label-inline">OFFER ENDS IN:</span>
+                    <div class="timer-display-inline" id="countdownTimer">
+                        <span class="timer-unit"><span class="timer-value" id="hours">00</span><span class="timer-text">h</span></span>
+                        <span class="timer-separator">:</span>
+                        <span class="timer-unit"><span class="timer-value" id="minutes">05</span><span class="timer-text">m</span></span>
+                        <span class="timer-separator">:</span>
+                        <span class="timer-unit"><span class="timer-value" id="seconds">00</span><span class="timer-text">s</span></span>
+                    </div>
+                </div>
+
+                <!-- Price Display -->
+                <div class="price-showcase">
+                    <div class="price-label">Workshop Fee:</div>
+                    <div class="price-row">
+                        <span class="old-price">₹5,000</span>
+                        <span class="discount-pill">95% OFF</span>
+                    </div>
+                    <div class="current-price">
+                        <span class="rupee-symbol">₹</span>
+                        <span class="price-amount" id="priceRoller">99</span>
+                        <span class="price-only">ONLY</span>
+                    </div>
+                    <div class="savings-text">You Save ₹4,901 Today!</div>
+                </div>
+
+                <!-- CTA Button -->
+                <a href="https://pages.razorpay.com/aimas" target="_blank" class="hero-cta-button">
+                    <span class="cta-text">BOOK YOUR SEAT NOW</span>
+                    <span class="cta-arrow">→</span>
+                </a>
+
+                <!-- Urgency Footer -->
+                <div class="urgency-footer">
+                    <span class="urgency-dot"></span>
+                    <span class="urgency-message">Only 50 Seats Left • Filling Fast!</span>
+                    <span class="urgency-dot"></span>
+                </div>
+            </div>
+
+            <!-- Mode Selection -->
+            <div class="hero-modes">
+                <div class="mode-card">
+                    <span class="mode-icon">🏢</span>
+                    <span class="mode-name">OFFLINE</span>
+                    <span class="mode-location">Parbhani</span>
+                </div>
+                <div class="mode-divider">OR</div>
+                <div class="mode-card">
+                    <span class="mode-icon">💻</span>
+                    <span class="mode-name">ONLINE</span>
+                    <span class="mode-location">Live Session</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor Section -->
+    <section class="instructor-section">
+        <h2 class="instructor-section-title">YOUR INSTRUCTORS</h2>
+        <div class="instructors-grid">
+            <!-- Instructor 1: Madhav Sharma -->
+            <div class="instructor-card">
+                <div class="instructor-image-wrapper">
+                    <img src="images/madhav-sharma.png" alt="Madhav Sharma - AI Expert & Founder" class="instructor-image">
+                </div>
+                <div class="instructor-info">
+                    <h3 class="instructor-name">Madhav Sharma</h3>
+                    <p class="instructor-title">Entrepreneur | Teacher | Founder - Devansh Edu-tech</p>
+                    <p class="instructor-description">
+                        Expert AI practitioner with hands-on experience in training thousands of students. Madhav specializes in making complex AI tools accessible and practical for everyone, from students to business owners.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Instructor 2: Deep Patange -->
+            <div class="instructor-card">
+                <div class="instructor-image-wrapper">
+                    <img src="images/deep-patange.png" alt="Deep Patange - AI Expert & Research Analyst" class="instructor-image">
+                </div>
+                <div class="instructor-info">
+                    <h3 class="instructor-name">Deep Patange</h3>
+                    <p class="instructor-title">AI Expert & Research Analyst</p>
+                    <p class="instructor-description">
+                        Master in AI technologies with extensive hands-on experience across multiple AI domains. Deep is an expert in AI-powered tools, automation, and creative workflows, bringing deep expertise in helping individuals and businesses leverage AI to transform their work and unlock new possibilities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- What You'll Create Section -->
+        <section class="section fade-in" style="margin-top: 60px; padding: 60px 40px;">
+            <h2 class="section-title" style="margin-bottom: 30px;">🎯 WHAT YOU'LL CREATE</h2>
+            <p style="text-align: center; font-size: 1.4em; margin-bottom: 50px; color: var(--primary-blue);">
+                100% HANDS-ON • LIVE DEMONSTRATIONS • INTERACTIVE SESSION
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎬</div>
+                    <div class="feature-title">AI Videos</div>
+                    <div class="feature-desc">Complete videos with AI-generated audio, music & effects</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <div class="feature-title">Social Content</div>
+                    <div class="feature-desc">Instagram posts, reels, and viral content</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <div class="feature-title">AI Art</div>
+                    <div class="feature-desc">Stunning images and graphics from text</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📢</div>
+                    <div class="feature-title">Marketing Ads</div>
+                    <div class="feature-desc">Professional campaigns & advertising content</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎵</div>
+                    <div class="feature-title">Music & Audio</div>
+                    <div class="feature-desc">Text-to-audio, voiceovers & background music</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <div class="feature-title">Automation</div>
+                    <div class="feature-desc">Instagram automation & workflow optimization</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workshop Flow Section -->
+        <section class="section fade-in" style="margin-top: 60px; padding: 60px 40px;">
+            <h2 class="section-title" style="margin-bottom: 40px;">⏱️ 3-HOUR WORKSHOP BREAKDOWN</h2>
+
+            <div class="flow-item" style="margin-bottom: 30px;">
+                <div class="flow-title" style="margin-bottom: 15px;">🚀 Hour 1: AI Content Creation Mastery</div>
+                <div class="flow-desc">
+                    Master ChatGPT, Claude & Google Gemini for instant content creation • Generate blog posts, social media captions, marketing copy • Write professional emails, scripts, and stories • Live demo: Create a complete marketing campaign in minutes
+                </div>
+            </div>
+
+            <div class="flow-item" style="margin-bottom: 30px;">
+                <div class="flow-title" style="margin-bottom: 15px;">🎨 Hour 2: Visual & Video Magic</div>
+                <div class="flow-desc">
+                    Master image generation with SECRET tools, NanoBana & Google Gemini • Create stunning videos with Google Veo, Runway, Kling AI • Design professional graphics with Canva AI • Remove backgrounds & edit like a pro • Create complete AI movie trailer
+                </div>
+            </div>
+
+            <div class="flow-item" style="margin-bottom: 30px;">
+                <div class="flow-title" style="margin-bottom: 15px;">🎵 Hour 3: Audio, Music & Complete Project</div>
+                <div class="flow-desc">
+                    Generate realistic voices with ElevenLabs • Create custom music with Suno AI • Master Instagram automation tools • Final Project: Create a complete AI-generated video with voice, music, and effects • Export & share ready-to-post content
+                </div>
+            </div>
+        </section>
+
+        <!-- Target Audience Section -->
+        <section class="section fade-in" style="margin-top: 60px; padding: 60px 40px;">
+            <h2 class="section-title" style="margin-bottom: 40px;">👥 WHO SHOULD ATTEND?</h2>
+
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <div class="audience-icon">🎓</div>
+                    <div class="audience-title">Students</div>
+                    <div class="audience-benefits">
+                        ✓ Study smarter with AI assistance<br>
+                        ✓ Create stunning presentations<br>
+                        ✓ Complete assignments 10x faster<br>
+                        ✓ Start earning money online
+                    </div>
+                </div>
+
+                <div class="audience-card">
+                    <div class="audience-icon">👨‍🏫</div>
+                    <div class="audience-title">Teachers</div>
+                    <div class="audience-benefits">
+                        ✓ Create engaging lesson plans<br>
+                        ✓ Generate study materials instantly<br>
+                        ✓ Save 10+ hours every week<br>
+                        ✓ Professional educational content
+                    </div>
+                </div>
+
+                <div class="audience-card">
+                    <div class="audience-icon">🏪</div>
+                    <div class="audience-title">Shopkeepers</div>
+                    <div class="audience-benefits">
+                        ✓ Professional marketing materials<br>
+                        ✓ Build social media presence<br>
+                        ✓ AI-powered product photography<br>
+                        ✓ Automated customer engagement
+                    </div>
+                </div>
+
+                <div class="audience-card">
+                    <div class="audience-icon">💼</div>
+                    <div class="audience-title">Business Owners</div>
+                    <div class="audience-benefits">
+                        ✓ Reduce marketing costs by 90%<br>
+                        ✓ Scale operations efficiently<br>
+                        ✓ Automate repetitive tasks<br>
+                        ✓ Gain competitive advantage
+                    </div>
+                </div>
+
+                <div class="audience-card">
+                    <div class="audience-icon">👩‍💼</div>
+                    <div class="audience-title">Freelancers</div>
+                    <div class="audience-benefits">
+                        ✓ 10x your productivity<br>
+                        ✓ Offer premium AI services<br>
+                        ✓ Attract more clients<br>
+                        ✓ Increase your income
+                    </div>
+                </div>
+
+                <div class="audience-card">
+                    <div class="audience-icon">📈</div>
+                    <div class="audience-title">Traders</div>
+                    <div class="audience-benefits">
+                        ✓ AI-powered market analysis<br>
+                        ✓ Automate data collection<br>
+                        ✓ Generate detailed reports<br>
+                        ✓ Extract business insights
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Tools Section -->
+        <section class="section fade-in" style="margin-top: 60px; padding: 60px 40px;">
+            <h2 class="section-title" style="margin-bottom: 50px;">🛠️ 20 AI TOOLS YOU'LL MASTER</h2>
+
+            <div style="margin: 50px 0;">
+                <h3 style="color: var(--primary-blue); font-size: 2em; margin-bottom: 35px; font-family: 'Orbitron', sans-serif;">
+                    💬 AI CHAT & CONTENT CREATION
+                </h3>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-name">ChatGPT <span class="tool-badge">ESSENTIAL</span></div>
+                        <div class="tool-desc">Most powerful AI for writing, problem-solving, content creation. Works in multiple languages. Can analyze images and create instant content.</div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-name">Claude AI <span class="tool-badge">PRO</span></div>
+                        <div class="tool-desc">Best for long-form content, detailed analysis, and complex problem-solving. Handles large documents with thoughtful responses.</div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-name">Google Gemini <span class="tool-badge">FREE</span></div>
+                        <div class="tool-desc">Real-time web search, Google services integration. Completely free unlimited access. Perfect for research and current information.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin: 50px 0;">
+                <h3 style="color: var(--primary-blue); font-size: 2em; margin-bottom: 35px; font-family: 'Orbitron', sans-serif;">
+                    🎨 AI IMAGE GENERATION
+                </h3>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-name">SECRET Colab Tool <span class="tool-badge">🔥 EXCLUSIVE</span></div>
+                        <div class="tool-desc">Professional-grade image generation using Google Colab. Create unlimited stunning images for FREE. This secret tool will transform your creative work!</div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-name">Google Gemini Image <span class="tool-badge">NEW</span></div>
+                        <div class="tool-desc">Generate images directly in Gemini. Free and unlimited. Great for quick visual content creation.</div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-name">NanoBana <span class="tool-badge">TRENDING</span></div>
+                        <div class="tool-desc">Indian AI tool for culturally relevant images. Perfect for local marketing and social media content.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin: 50px 0;">
+                <h3 style="color: var(--primary-blue); font-size: 2em; margin-bottom: 35px; font-family: 'Orbitron', sans-serif;">
+                    🎬 AI VIDEO CREATION
+                </h3>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-name">Google Veo <span class="tool-badge">LATEST</span></div>
+                        <div class="tool-desc">Google's newest video generation AI. Create realistic videos from text. Revolutionary technology for creators.</div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-name">Runway ML <span class="tool-badge">PRO</span></div>
+                        <div class="tool-desc">Industry-standard AI video tools. Text-to-video, image-to-video, AI editing. Used by professionals worldwide.</div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-name">Kling AI <span class="tool-badge">HOT</span></div>
+                        <div class="tool-desc">Create viral realistic videos. Amazing quality for social media, ads, and creative projects.</div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-name">CapCut <span class="tool-badge">VIRAL</span></div>
+                        <div class="tool-desc">Create trending Instagram Reels, YouTube Shorts, TikToks. Auto-captions, effects, music. No watermark!</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin: 50px 0;">
+                <h3 style="color: var(--primary-blue); font-size: 2em; margin-bottom: 35px; font-family: 'Orbitron', sans-serif;">
+                    🎵 AI AUDIO & MUSIC
+                </h3>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-name">Suno AI <span class="tool-badge">🎶 MUSIC</span></div>
+                        <div class="tool-desc">Create complete songs with lyrics and music! Any genre, any style. Perfect for background music and jingles.</div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-name">ElevenLabs <span class="tool-badge">🎙️ VOICE</span></div>
+                        <div class="tool-desc">Most realistic AI voices. Text-to-speech, voice cloning, multiple languages including Hindi. Professional voiceovers.</div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-name">NotebookLM <span class="tool-badge">PODCAST</span></div>
+                        <div class="tool-desc">Upload documents, get AI-generated podcasts! Two hosts discuss your content. Perfect for audio learning.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Different Section -->
+        <section class="section fade-in" style="margin-top: 60px; padding: 60px 40px; background: linear-gradient(135deg, rgba(0, 119, 255, 0.1), rgba(107, 0, 255, 0.1));">
+            <h2 class="section-title" style="margin-bottom: 40px;">⭐ WHY THIS WORKSHOP IS DIFFERENT</h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <div class="feature-title">100% Hands-On</div>
+                    <div class="feature-desc">You create, not just watch. Build real projects during the session.</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <div class="feature-title">Latest 2025 Tools</div>
+                    <div class="feature-desc">Stay ahead with cutting-edge AI technology and tools.</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎁</div>
+                    <div class="feature-title">Secret Techniques</div>
+                    <div class="feature-desc">Exclusive tools and methods not available elsewhere.</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <div class="feature-title">Start Earning</div>
+                    <div class="feature-desc">Monetize your new skills immediately after the workshop.</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <div class="feature-title">Real Projects</div>
+                    <div class="feature-desc">Work on industry-standard, portfolio-ready projects.</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <div class="feature-title">Certificate</div>
+                    <div class="feature-desc">Get certified and showcase your AI mastery.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bonus Section -->
+        <section class="section fade-in" style="margin-top: 60px; padding: 60px 40px; background: linear-gradient(135deg, rgba(255, 0, 128, 0.1), rgba(255, 140, 0, 0.1)); border-color: rgba(255, 0, 128, 0.3);">
+            <h2 class="section-title" style="margin-bottom: 30px; background: linear-gradient(135deg, #ff0080, #ff8c00); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
+                🔥 BONUS: WHAT YOU TAKE HOME
+            </h2>
+
+            <div style="font-size: 1.3em; line-height: 2.8; text-align: center; margin-top: 50px;">
+                ✅ Complete AI Video Project (Made by YOU!)<br>
+                ✅ Instagram Content Pack<br>
+                ✅ Marketing Ad Templates<br>
+                ✅ 500+ AI Prompts Library<br>
+                ✅ Secret Tools Access<br>
+                ✅ Workshop Recording (Online Mode)<br>
+                ✅ Certificate of Completion<br>
+                ✅ WhatsApp Support Group<br>
+                ✅ Lifetime Access to Resources
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="section fade-in" style="margin-top: 60px; text-align: center; padding: 100px 40px;">
+            <h2 class="section-title" style="font-size: 3.5em; margin-bottom: 40px;">🎯 LIMITED SEATS AVAILABLE!</h2>
+
+            <p style="font-size: 1.5em; margin: 40px 0; line-height: 2.2;">
+                <strong style="color: var(--primary-blue);">✅ 3 Hours of Pure Value</strong><br>
+                <strong style="color: var(--primary-blue);">✅ 20 AI Tools Mastery</strong><br>
+                <strong style="color: var(--primary-blue);">✅ Create Real Projects</strong><br>
+                <strong style="color: var(--primary-blue);">✅ Skills Worth ₹50,000+</strong>
+            </p>
+
+            <div style="margin: 50px 0;">
+                <a href="https://pages.razorpay.com/aimas" target="_blank" class="cta-button">BOOK YOUR SEAT - ONLY ₹99!</a>
+            </div>
+
+            <p style="font-size: 1.3em; margin-top: 30px; opacity: 0.9;">
+                Choose Your Mode: 🏢 Offline in Parbhani | 💻 Online Live Session
+            </p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" style="margin-top: 60px;">
+        <h2 class="footer-title" style="margin-bottom: 50px;">📞 BOOK YOUR SEAT NOW!</h2>
+
+        <div style="margin: 50px 0;">
+            <div class="contact-info">
+                📱 Call/WhatsApp: <a href="tel:7972217407">79722 17407</a>
+            </div>
+            <div class="contact-info">
+                📧 Email: <a href="mailto:devansh.edutech@gmail.com">devansh.edutech@gmail.com</a>
+            </div>
+            <div class="contact-info">
+                📍 Location: Parbhani, Maharashtra
+            </div>
+        </div>
+
+        <div class="footer-investment-box">
+            <p class="footer-investment-price">Investment: ONLY ₹99</p>
+            <p class="footer-investment-value">Actual Worth: ₹5,000+ Value</p>
+        </div>
+
+        <p class="footer-limited-seats">
+            ⚡ Limited Seats • First Come First Serve • Both Online & Offline Available ⚡
+        </p>
+
+        <div class="footer-copyright">
+            <p>
+                © 2025 DEVansh EDU-TECH. All rights reserved.<br>
+                Empowering India with AI Education
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Particle Effects -->
+    <script src="js/particles.js"></script>
+
+    <!-- Casino Price Drop & Sticky CTA Script -->
+    <script>
+        // Enhanced Casino-style price drop animation with blur effect
+        function animatePriceDrop() {
+            const priceElement = document.getElementById('priceRoller');
+            const startPrice = 5000;
+            const endPrice = 99;
+            const duration = 4000; // 4 seconds for more dramatic effect
+            const fastPhase = 2000; // First 2 seconds - fast spinning
+            const slowPhase = 2000; // Last 2 seconds - slow down
+
+            let startTime = null;
+
+            function animate(currentTime) {
+                if (!startTime) startTime = currentTime;
+                const elapsed = currentTime - startTime;
+
+                if (elapsed < duration) {
+                    let progress = elapsed / duration;
+                    let currentPrice;
+                    let blurAmount;
+
+                    if (elapsed < fastPhase) {
+                        // Fast phase - numbers blur and spin quickly
+                        const fastProgress = elapsed / fastPhase;
+                        currentPrice = Math.round(startPrice - (startPrice - 500) * fastProgress);
+                        blurAmount = 8; // Heavy blur during fast spin
+
+                        // Random flicker effect
+                        if (Math.random() > 0.7) {
+                            currentPrice = Math.floor(Math.random() * 4500) + 500;
+                        }
+                    } else {
+                        // Slow phase - gradually slow down and focus
+                        const slowProgress = (elapsed - fastPhase) / slowPhase;
+                        const easeOut = 1 - Math.pow(1 - slowProgress, 4); // Strong ease out
+                        currentPrice = Math.round(500 - (500 - endPrice) * easeOut);
+                        blurAmount = Math.max(0, 8 * (1 - slowProgress)); // Reduce blur
+                    }
+
+                    priceElement.textContent = currentPrice;
+                    priceElement.style.filter = `blur(${blurAmount}px)`;
+                    priceElement.style.opacity = blurAmount > 4 ? 0.7 : 1;
+
+                    requestAnimationFrame(animate);
+                } else {
+                    // Final state - crisp and clear
+                    priceElement.textContent = endPrice;
+                    priceElement.style.filter = 'blur(0px)';
+                    priceElement.style.opacity = 1;
+
+                    // Victory animation
+                    priceElement.style.transform = 'scale(1.3)';
+                    priceElement.style.color = '#00ff9d';
+
+                    setTimeout(() => {
+                        priceElement.style.transform = 'scale(1)';
+                        priceElement.style.color = '';
+                    }, 300);
+
+                    // Add celebration effect
+                    createConfetti();
+                }
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        // Simple confetti effect
+        function createConfetti() {
+            const priceDisplay = document.querySelector('.price-display');
+            for (let i = 0; i < 20; i++) {
+                setTimeout(() => {
+                    const confetti = document.createElement('div');
+                    confetti.style.position = 'absolute';
+                    confetti.style.width = '10px';
+                    confetti.style.height = '10px';
+                    confetti.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
+                    confetti.style.left = Math.random() * 100 + '%';
+                    confetti.style.top = '-10px';
+                    confetti.style.borderRadius = '50%';
+                    confetti.style.pointerEvents = 'none';
+                    confetti.style.animation = 'confettiFall 1s ease-out forwards';
+                    priceDisplay.appendChild(confetti);
+
+                    setTimeout(() => confetti.remove(), 1000);
+                }, i * 50);
+            }
+        }
+
+        // Countdown Timer Function (5 minutes)
+        function startCountdown() {
+            // Set countdown to 5 minutes from now
+            const endTime = new Date().getTime() + (5 * 60 * 1000);
+
+            function updateTimer() {
+                const now = new Date().getTime();
+                const distance = endTime - now;
+
+                if (distance > 0) {
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+                    document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+                    document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+                } else {
+                    // Reset to 5 minutes when timer expires
+                    clearInterval(timerInterval);
+                    startCountdown();
+                }
+            }
+
+            updateTimer();
+            const timerInterval = setInterval(updateTimer, 1000);
+        }
+
+        // Start animations when page loads
+        window.addEventListener('load', () => {
+            // Enable price drop animation on page load
+            setTimeout(animatePriceDrop, 500);
+            // handleStickyCTA(); // DISABLED - sticky bar is always visible
+            startCountdown(); // Start countdown timer
+        });
+    </script>
+
+    <!-- STICKY BAR - ALWAYS VISIBLE AT BOTTOM -->
+    <div class="sticky-cta-fixed">
+        <div>
+            <div>99 ONLY</div>
+            <a href="https://pages.razorpay.com/aimas" target="_blank">BOOK NOW</a>
+        </div>
+    </div>
+</body>
+</html>
