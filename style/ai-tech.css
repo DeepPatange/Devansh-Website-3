@@ -135,38 +135,61 @@ body {
 /* Workshop Date & Time */
 .workshop-datetime {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin: 25px auto 0;
-    padding: 15px 30px;
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(0, 255, 157, 0.15));
-    border: 2px solid var(--neon-blue);
-    border-radius: 12px;
+    gap: 8px;
+    margin: 30px auto 0;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 8px;
     max-width: fit-content;
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+    position: relative;
 }
 
-.datetime-icon {
-    font-size: 2rem;
+.workshop-datetime::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(90deg, var(--neon-blue), var(--neon-green), var(--neon-blue));
+    border-radius: 8px;
+    z-index: -1;
+    opacity: 0.5;
 }
 
-.datetime-text {
-    text-align: left;
+.datetime-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--neon-green);
+    opacity: 0.8;
+}
+
+.datetime-main {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.4rem;
+    font-weight: 900;
+    letter-spacing: 1px;
 }
 
 .datetime-day {
-    font-size: 1.2rem;
-    font-weight: 700;
+    color: var(--text-primary);
+    background: linear-gradient(135deg, var(--neon-blue), var(--neon-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.datetime-separator {
     color: var(--neon-blue);
-    line-height: 1.2;
+    opacity: 0.5;
+    font-weight: 300;
 }
 
 .datetime-time {
-    font-size: 1.5rem;
-    font-weight: 900;
     color: var(--neon-green);
-    line-height: 1.2;
 }
 
 /* ===== HERO STATS ===== */
